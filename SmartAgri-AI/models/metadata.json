@@ -1,0 +1,68 @@
+{
+    "model_name": "Random Forest",
+    "model_version": "1.0.0",
+    "serialization_format": "joblib",
+    "trained_date": "2026-09-26",
+    "random_state": 42,
+    "selection_criteria": {
+        "primary_metric": "Macro F1-Score (ensures equal penalty across all 22 crop classes)",
+        "secondary_metric": "Cross-Validation Mean Accuracy & Low Variance across folds",
+        "qualitative_factors": [
+            "Inherent non-linear feature interaction modeling (decision forest ensemble)",
+            "Robustness to non-Gaussian distributions and feature outliers",
+            "Direct probabilistic calibration (predict_proba) for confidence estimation",
+            "Native feature importance attribution (Mean Decrease in Impurity)",
+            "Low inference latency (~13.5 ms/query) well within interactive web budget"
+        ]
+    },
+    "performance_summary": {
+        "test_accuracy": 0.9955,
+        "macro_precision": 0.9957,
+        "macro_recall": 0.9955,
+        "macro_f1": 0.9955,
+        "weighted_f1": 0.9955
+    },
+    "features": [
+        "N",
+        "P",
+        "K",
+        "temperature",
+        "humidity",
+        "ph",
+        "rainfall"
+    ],
+    "target_classes": [
+        "apple",
+        "banana",
+        "blackgram",
+        "chickpea",
+        "coconut",
+        "coffee",
+        "cotton",
+        "grapes",
+        "jute",
+        "kidneybeans",
+        "lentil",
+        "maize",
+        "mango",
+        "mothbeans",
+        "mungbean",
+        "muskmelon",
+        "orange",
+        "papaya",
+        "pigeonpeas",
+        "pomegranate",
+        "rice",
+        "watermelon"
+    ],
+    "feature_importance": {
+        "N": 0.09636333302406673,
+        "P": 0.15084986670735417,
+        "K": 0.1753925654245519,
+        "temperature": 0.07237530192534172,
+        "humidity": 0.22422658789267352,
+        "ph": 0.050608119279420875,
+        "rainfall": 0.23018422574659111
+    },
+    "disclaimer": "SmartAgri-AI provides decision-support predictions based on historical agricultural data. It does not replace professional agronomic advice or local soil testing."
+}

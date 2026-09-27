@@ -1,0 +1,138 @@
+/* SmartAgri-AI Custom Modern Enterprise Stylesheet */
+
+:root {
+    --primary-color: #1b4332;
+    --primary-light: #2d6a4f;
+    --accent-color: #52b788;
+    --background-color: #f8faf9;
+    --card-background: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+}
+
+/* Global Container Tweaks */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* Header & Banner Styles */
+.hero-banner {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
+    color: #ffffff;
+    padding: 2.2rem 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(27, 67, 50, 0.15);
+}
+
+.hero-banner h1 {
+    color: #ffffff !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: -0.5px;
+}
+
+.hero-banner p {
+    color: #d8f3dc !important;
+    font-size: 1.05rem !important;
+    max-width: 800px;
+    margin-bottom: 0 !important;
+    line-height: 1.5;
+}
+
+/* Card Containers */
+.agri-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.agri-card h3 {
+    color: #1b4332;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+/* Result Recommendation Highlight Card */
+.result-card {
+    background: linear-gradient(145deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 2px solid #86efac;
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+}
+
+.result-crop-title {
+    color: #166534;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 0.2rem 0;
+}
+
+.result-confidence-badge {
+    display: inline-block;
+    background-color: #15803d;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+
+/* Metric Pill Badges */
+.status-pill {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-optimal {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-above {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.status-below {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+/* Ethical Disclaimer Box */
+.disclaimer-box {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem 1.2rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+    font-size: 0.92rem;
+    color: #92400e;
+    line-height: 1.5;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 3rem;
+}

@@ -1,0 +1,47 @@
+{
+    "model_architecture": "Random Forest Classifier (100 Trees)",
+    "mean_decrease_in_impurity_pct": {
+        "rainfall": 23.02,
+        "humidity": 22.42,
+        "K": 17.54,
+        "P": 15.08,
+        "N": 9.64,
+        "temperature": 7.24,
+        "ph": 5.06
+    },
+    "permutation_importance_on_test_set": {
+        "humidity": {
+            "mean_importance_drop": 0.3234,
+            "std_importance_drop": 0.0161
+        },
+        "N": {
+            "mean_importance_drop": 0.2102,
+            "std_importance_drop": 0.0149
+        },
+        "rainfall": {
+            "mean_importance_drop": 0.1932,
+            "std_importance_drop": 0.0091
+        },
+        "K": {
+            "mean_importance_drop": 0.1373,
+            "std_importance_drop": 0.0102
+        },
+        "P": {
+            "mean_importance_drop": 0.1116,
+            "std_importance_drop": 0.0136
+        },
+        "ph": {
+            "mean_importance_drop": 0.0084,
+            "std_importance_drop": 0.0048
+        },
+        "temperature": {
+            "mean_importance_drop": 0.0064,
+            "std_importance_drop": 0.0038
+        }
+    },
+    "causal_cautionary_guidelines": [
+        "Feature importance shows statistical association within the training dataset.",
+        "Do not assert that modifying an input parameter guarantees a specific biological yield.",
+        "Always state: 'The model identified these features as influential for this prediction.'"
+    ]
+}
